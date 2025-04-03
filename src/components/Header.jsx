@@ -25,10 +25,11 @@ function Header({ currentLanguage, onLanguageChange }) {
                 </button>
             </div>
             <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-                <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+                <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
                 <li><Link to="/activities" onClick={closeMenu}>Actividades</Link></li>
                 <li><Link to="/about" onClick={closeMenu}>Acerca de nosotros</Link></li>
                 <li><Link to="/contact" onClick={closeMenu}>Contacto</Link></li>
+                <li><Link to="/reviews" onClick={closeMenu}>Reseñas</Link></li>
                 <li className="language-switcher">
                     <button
                         className={currentLanguage === 'es' ? 'active' : ''}

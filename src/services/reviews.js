@@ -1,26 +1,31 @@
-import db from "../firebase";
-import { ref, get, remove, push } from "firebase/database";
+import { db } from './firebase';
+import { ref, get, set, push } from 'firebase/database';
 
-const dbRef = ref(db, "/rural");
-
-const getAllBikes = () => {
+const getAllReviews = () => {
+    console.log(db);
+    console.log('Fetching all reviews from Firebase');
+    const dbRef = ref(db, '/reviews');
+    console.log(dbRef);
     return get(dbRef);
 };
 
-const addBike = (brand, model) => {
-    return push(dbRef, {
-        brand: brand,
-        model: model
-    });
+const saveReview = (review) => {
+    console.log('Saving review to Firebase:', review);
+    const dbRef = ref(db, '/reviews');
+    // return set(dbRef, review);
+    return push(dbRef, review);
+
 };
 
-const removeBike = (key) => {
-    const dbRefBike = ref(db, `/bikes/${key}`);
-    return remove(dbRefBike);
+const deleteReview = (key) => {
+    console.log('Deleting review with key:', key);
+    const dbRef = ref(db, `/reviews/${key}`);
+    return set(dbRef, null);
 };
+
 
 export default {
-    getAllBikes,
-    addBike,
-    removeBike,
+    getAllReviews,
+    saveReview,
+    deleteReview
 };

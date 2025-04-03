@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Casa Rural El Chorro</title>
+        <link>https://rural-884ed.web.app/</link>
+        <description>Discover the beauty of Casa Rural El Chorro, including stunning photo galleries
+            and exciting activities in a natural setting.</description>
+        <item>
+            <title>Photos</title>
+            <link>https://rural-884ed.web.app/#gallery</link>
+            <description>Explore breathtaking photos of Casa Rural El Chorro and its surroundings.</description>
+        </item>
+        <item>
+            <title>Activities</title>
+            <link>https://rural-884ed.web.app/#around</link>
+            <description>Discover guided activities and experiences to connect with nature at Casa
+                Rural El Chorro.</description>
+        </item>
+    </channel>
+</rss>

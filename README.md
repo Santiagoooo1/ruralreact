@@ -65,7 +65,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![El Chorro](src/assets/images/el_chorro.png)
 
 Casa Rural El Chorro is a beautiful rural house website showcasing the best of nature and comfort. The website features a parallax effect on the homepage, a professional contact page, and a detailed about page with sections for different parts of the house.
 
@@ -195,3 +195,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your_username
 [product-screenshot]: images/screenshot.png
+
+
+## URL
+
+https://rural-884ed.web.app/
+
+### Latest Screenshot
+
+![Latest Screenshot](src/assets/images/latest_screenshot.png)
+

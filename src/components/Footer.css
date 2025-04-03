@@ -15,6 +15,8 @@ ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 li {
@@ -37,4 +39,148 @@ a:focus {
 li a {
     display: inline-block;
     transition: color 0.3s ease;
+}
+
+.dropdown-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dropdown-toggle {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #333;
+}
+
+.dropdown-content {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    color: #f39c12;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .PrincipalFooter {
+        padding: 15px;
+    }
+
+    ul {
+        gap: 15px;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    .my-footer {
+        font-size: 12px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .dropdown-toggle {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .dropdown-content {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .dropdown-content ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .PrincipalFooter {
+        padding: 20px 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    .my-footer {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .dropdown-content {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .dropdown-toggle {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .dropdown-content ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

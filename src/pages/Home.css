@@ -302,3 +302,164 @@ button:hover {
         font-size: 1.2rem;
     } */
 }
+
+@media (max-width: 1024px) {
+    #around {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #around h2 {
+        font-size: 2.5em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    #around .containera {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .carts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    #around .carta {
+        width: 48%;
+        min-width: 300px;
+        padding: 20px;
+        margin: 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #around .carta h3 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    #around .carta p {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+
+    #around .carta button,
+    #around .carta .btn-info {
+        margin-top: 20px;
+        padding: 12px 20px;
+        font-size: 1em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #gallery .container {
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #gallery h2 {
+        font-size: 2.3em;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #around {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #around h2 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    #around .containera {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .carts {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #around .carta {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    #gallery .container {
+        padding: 50px 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #around {
+        padding: 5%;
+        text-align: center;
+    }
+
+    #around h2 {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+
+    #around .containera {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .carts {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #around .carta {
+        width: 90%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    #gallery .container {
+        padding: 50px 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gallery h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+}

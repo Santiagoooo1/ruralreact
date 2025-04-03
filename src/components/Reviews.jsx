@@ -1,26 +1,50 @@
-import db from "../firebase";
-import { ref, get, remove, push } from "firebase/database";
 
-const dbRef = ref(db, "/bikes");
+import { useEffect, useState } from 'react';
+import './Reviews.css';
+import reviewsService from '../services/reviews';
 
-const getAllBikes = () => {
-    return get(dbRef);
-};
+function Reviews() {
+    const [reviews, setReviews] = useState([]);
 
-const addBike = (brand, model) => {
-    return push(dbRef, {
-        brand: brand,
-        model: model
-    });
-};
+    const findAllReviews = async () => {
+        try {
+            const snapshot = await reviewsService.getAllReviews();
+            const allReviews = [];
 
-const removeBike = (key) => {
-    const dbRefBike = ref(db, `/bikes/${key}`);
-    return remove(dbRefBike);
-};
+            snapshot.forEach((d) => {
+                console.log(d);
+                const key = d.key;
+                const data = d.val();
+                allReviews.push({
+                    key,
+                    name: data.name,
+                    review: data.review,
+                    value: data.value,
+                });
+            });
 
-export default {
-    getAllBikes,
-    addBike,
-    removeBike,
-};
+            setReviews(allReviews);
+        } catch (error) {
+            console.error('Error al obtener reseñas:', error);
+        }
+    };
+
+    useEffect(() => {
+        findAllReviews();
+    }, []);
+
+    return (
+
+        <div className="reviews-container">
+            {reviews.map((review) => (
+                <div className="review" key={review.key}>
+                    <h3>{review.name}</h3>
+                    <p>{review.review}</p>
+                    <p>Rating: {review.value} / 5</p>
+                </div>
+            ))}
+        </div>
+    );
+}
+
+export default Reviews;

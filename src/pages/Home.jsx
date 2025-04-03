@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Footer from "../components/Footer";
 import "./home.css";
 import PhotoGallery from "../components/PhotoGallery";
+import Review from '../components/Reviews';
 
 function Home({ language }) {
     const content = {

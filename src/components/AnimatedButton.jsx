@@ -1,5 +1,5 @@
 import React from 'react';
-import './AnimatedButton.css'; // Asegúrate de importar el archivo CSS
+import './AnimatedButton.css';
 
 const AnimatedButton = () => {
     return (

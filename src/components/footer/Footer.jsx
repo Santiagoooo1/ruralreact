@@ -17,7 +17,6 @@ function Footer() {
 
     return (
         <footer className="PrincipalFooter">
-            {/* Social Media Icons for Desktop */}
             <div className="desktop-only">
                 <ul>
                     <li>
@@ -48,7 +47,6 @@ function Footer() {
                 </ul>
             </div>
 
-            {/* Dropdowns for Mobile */}
             <div className="dropdown-container mobile-only">
                 <button className="dropdown-toggle" onClick={toggleSocialDropdown}>
                     Redes Sociales

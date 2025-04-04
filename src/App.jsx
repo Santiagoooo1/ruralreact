@@ -1,13 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
-import ActivitiesList from "./pages/ActivitiesList";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import TermsAndConditions from "./pages/TermsAndConditions";
-import Header from "./components/Header";
-import Reviews from "./components/Reviews";
-import ReviewsPage from "./pages/ReviewsPage";
+import ActivitiesList from "./pages/activities-list/ActivitiesList";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
+import TermsAndConditions from "./pages/terms-and-condition/TermsAndConditions";
+import Header from "./components/header/Header";
+import ReviewsPage from "./pages/review-page/ReviewsPage";
 
 function App() {
   const [language, setLanguage] = useState('es');

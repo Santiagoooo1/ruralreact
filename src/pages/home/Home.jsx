@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from "../components/Footer";
+import Footer from "../../components/footer/Footer";
 import "./home.css";
-import PhotoGallery from "../components/PhotoGallery";
-import Review from '../components/Reviews';
+import PhotoGallery from "../../components/photo-gallery/PhotoGallery";
 
 function Home({ language }) {
     const content = {

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./header.css";
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 function Header({ currentLanguage, onLanguageChange }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

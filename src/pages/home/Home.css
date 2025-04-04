@@ -51,7 +51,7 @@ button:hover {
 }
 
 .hero {
-    background-image: url('../assets/images/imagen_de_fondo.jpg');
+    background-image: url('../../assets/images/imagen_de_fondo.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -179,7 +179,7 @@ button:hover {
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("../assets/images/actividades.jpg");
+            rgba(0, 0, 0, 0.5)), url("../../assets/images/actividades.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -187,7 +187,7 @@ button:hover {
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("../assets/images/atardecer.jpg");
+            rgba(0, 0, 0, 0.5)), url("../../assets/images/atardecer.jpg");
     background-position: bottom center;
     background-size: cover;
 }
@@ -195,7 +195,7 @@ button:hover {
 .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("../assets/images/cocina.jpg");
+            rgba(0, 0, 0, 0.5)), url("../../assets/images/cocina.jpg");
     background-position: center center;
     background-size: cover;
 }
@@ -303,7 +303,7 @@ button:hover {
     } */
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
     #around {
         padding: 5%;
         text-align: center;
@@ -378,47 +378,6 @@ button:hover {
     #gallery h2 {
         font-size: 2.3em;
         margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    #around {
-        padding: 5%;
-        text-align: center;
-    }
-
-    #around h2 {
-        font-size: 2em;
-        margin-top: 50px;
-    }
-
-    #around .containera {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .carts {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #around .carta {
-        width: 90%;
-        padding: 10px;
-        margin: 5px 0;
-    }
-
-    #gallery .container {
-        padding: 50px 12px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #gallery h2 {
-        font-size: 2em;
-        margin-bottom: 10px;
     }
 }
 

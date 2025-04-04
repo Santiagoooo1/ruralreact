@@ -1,10 +1,10 @@
 import React from 'react';
 import "./PhotoGallery.css";
-import vistas from "../assets/images/vistas.jpg";
-import cocina from "../assets/images/cocina.jpg";
-import salon from "../assets/images/salon.jpg";
-import dormitorio from "../assets/images/porche.jpg";
-import bano from "../assets/images/baño.jpg";
+import vistas from "../../assets/images/vistas.jpg";
+import cocina from "../../assets/images/cocina.jpg";
+import salon from "../../assets/images/salon.jpg";
+import dormitorio from "../../assets/images/porche.jpg";
+import bano from "../../assets/images/baño.jpg";
 
 const photos = [
     { title: "Las Vistas", description: "Impresionantes vistas de la naturaleza.", image: vistas },

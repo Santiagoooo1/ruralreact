@@ -1,12 +1,11 @@
 import React from 'react';
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "../../components/footer/Footer";
 import "./About.css";
-import vistas from "../assets/images/vistas.jpg";
-import cocina from "../assets/images/cocina.jpg";
-import salon from "../assets/images/salon.jpg";
-import porche from "../assets/images/porche.jpg";
-import bano from "../assets/images/baño.jpg";
+import vistas from "../../assets/images/vistas.jpg";
+import cocina from "../../assets/images/cocina.jpg";
+import salon from "../../assets/images/salon.jpg";
+import porche from "../../assets/images/porche.jpg";
+import bano from "../../assets/images/baño.jpg";
 
 function About({ language }) {
     const content = {

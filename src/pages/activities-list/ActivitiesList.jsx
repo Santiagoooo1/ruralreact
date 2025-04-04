@@ -1,7 +1,6 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ActivityComponent from "../components/ActivityComponent";
-import { ACTIVITIES } from "../services/activities";
+import Footer from "../../components/footer/Footer";
+import ActivityComponent from "../../components/activity-component/ActivityComponent";
+import { ACTIVITIES } from "../../services/activities";
 import "./ActivitiesList.css";
 
 function ActivitiesList({ language }) {

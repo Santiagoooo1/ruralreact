@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Reviews from '../components/Reviews';
-import Footer from '../components/Footer';
+import Footer from '../../components/footer/Footer';
 import './ReviewsPage.css';
-import reviewsService from '../services/reviews';
+import reviewsService from '../../services/reviews';
 
 function ReviewsPage() {
 

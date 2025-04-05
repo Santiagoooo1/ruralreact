@@ -83,18 +83,7 @@ function Footer() {
                     </div>
                 )}
             </div>
-            <div className="dropdown-container mobile-only">
-                <button className="dropdown-toggle" onClick={toggleContactDropdown}>
-                    Contactos
-                </button>
-                {isContactDropdownOpen && (
-                    <div className="dropdown-content">
-                        <p>Email: palitotorremolinos@hotmail.com</p>
-                        <p>Teléfono: +34 692431803</p>
-                        <p>Dirección: El Carrizal, El Chorro, España</p>
-                    </div>
-                )}
-            </div>
+
             <p>&copy; {new Date().getFullYear()} Casa Rural El Chorro - <Link to="/terms" className="underline">Términos y Condiciones</Link></p>
         </footer>
     );

@@ -35,7 +35,8 @@
 
 .review-form button {
     padding: 0.75rem;
-    background-color: #38a169;
+    background-color: rgba(72, 117, 5, 0.633);
+    ;
     color: white;
     font-weight: bold;
     border: none;
@@ -45,7 +46,7 @@
 }
 
 .review-form button:hover {
-    background-color: #2f855a;
+    background-color: #093107cc;
 }
 
 .reviews-container {
@@ -79,7 +80,7 @@
     align-self: flex-end;
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: #e53e3e;
+    background-color: #a41f1f;
     color: white;
     border: none;
     border-radius: 0.375rem;
@@ -88,7 +89,7 @@
 }
 
 .delete-button:hover {
-    background-color: #c53030;
+    background-color: #a41f1f;
 }
 
 /* Responsive styles */

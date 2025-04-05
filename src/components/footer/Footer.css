@@ -104,6 +104,39 @@ li a {
     gap: 15px;
 }
 
+@media (max-width: 1024px) {
+    .PrincipalFooter {
+        padding: 15px;
+    }
+
+    ul {
+        gap: 15px;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    .my-footer {
+        font-size: 12px;
+    }
+
+    .dropdown-toggle {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .dropdown-content {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .dropdown-content ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 @media (max-width: 768px) {
     .PrincipalFooter {
         padding: 15px;
@@ -166,7 +199,7 @@ li a {
     }
 
     a {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
     }
 
     .dropdown-content {

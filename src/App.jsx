@@ -20,6 +20,7 @@ function App() {
       <Header currentLanguage={language} onLanguageChange={handleLanguageChange} />
       <Routes>
         <Route path="/" element={<Home language={language} />} />
+        <Route path="/home" element={<Home language={language} />} />
         <Route path="/activities" element={<ActivitiesList language={language} />} />
         <Route path="/about" element={<About language={language} />} />
         <Route path="/contact" element={<Contact language={language} />} />

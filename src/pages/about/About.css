@@ -94,24 +94,3 @@
     color: #2c3e50;
     margin-bottom: 10px;
 }
-
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .section {
-        flex-direction: column;
-    }
-
-    .section img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .section-content {
-        width: 100%;
-    }
-}

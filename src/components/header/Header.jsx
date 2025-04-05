@@ -3,6 +3,23 @@ import { useState } from "react";
 import "./header.css";
 import logo from "../../assets/images/logo.png";
 
+const links = {
+    es: [
+        { path: "/", label: "Inicio" },
+        { path: "/activities", label: "Actividades" },
+        { path: "/about", label: "Acerca de nosotros" },
+        { path: "/contact", label: "Contacto" },
+        { path: "/reviews", label: "Reseñas" }
+    ],
+    en: [
+        { path: "/", label: "Home" },
+        { path: "/activities", label: "Activities" },
+        { path: "/about", label: "About Us" },
+        { path: "/contact", label: "Contact" },
+        { path: "/reviews", label: "Reviews" }
+    ]
+};
+
 function Header({ currentLanguage, onLanguageChange }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,11 +42,13 @@ function Header({ currentLanguage, onLanguageChange }) {
                 </button>
             </div>
             <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-                <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
-                <li><Link to="/activities" onClick={closeMenu}>Actividades</Link></li>
-                <li><Link to="/about" onClick={closeMenu}>Acerca de nosotros</Link></li>
-                <li><Link to="/contact" onClick={closeMenu}>Contacto</Link></li>
-                <li><Link to="/reviews" onClick={closeMenu}>Reseñas</Link></li>
+                {links[currentLanguage].map((link, index) => (
+                    <li key={index}>
+                        <Link to={link.path} onClick={closeMenu}>
+                            {link.label}
+                        </Link>
+                    </li>
+                ))}
                 <li className="language-switcher">
                     <button
                         className={currentLanguage === 'es' ? 'active' : ''}

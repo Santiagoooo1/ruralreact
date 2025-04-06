@@ -4,8 +4,13 @@ import './ReviewsPage.css';
 import reviewsService from '../../services/reviews';
 
 function ReviewsPage() {
-
     const [reviews, setReviews] = useState([]);
+    const [formData, setFormData] = useState({
+        name: '',
+        text: '',
+        value: ''
+    });
+    const [editingKey, setEditingKey] = useState(null); // Track the review being edited
 
     const findAllReviews = async () => {
         try {
@@ -13,7 +18,6 @@ function ReviewsPage() {
             const allReviews = [];
 
             snapshot.forEach((d) => {
-                console.log(d);
                 const key = d.key;
                 const data = d.val();
                 allReviews.push({
@@ -34,12 +38,6 @@ function ReviewsPage() {
         findAllReviews();
     }, []);
 
-    const [formData, setFormData] = useState({
-        name: '',
-        text: '',
-        value: ''
-    });
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -47,18 +45,37 @@ function ReviewsPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Submitted Review:', formData);
-        reviewsService.saveReview(formData)
-            .then(() => {
-                console.log('Review saved successfully');
-                const refresh = findAllReviews(); // Refresh the reviews list
-            })
-            .catch((error) => {
-                console.error('Error saving review:', error);
-            });
+        if (editingKey) {
+            reviewsService.updateReview(editingKey, formData)
+                .then(() => {
+                    console.log('Review updated successfully');
+                    findAllReviews();
+                    setEditingKey(null);
+                })
+                .catch((error) => {
+                    console.error('Error updating review:', error);
+                });
+        } else {
+            reviewsService.saveReview(formData)
+                .then(() => {
+                    console.log('Review saved successfully');
+                    findAllReviews();
+                })
+                .catch((error) => {
+                    console.error('Error saving review:', error);
+                });
+        }
 
-        // Add logic to save the review (e.g., API call)
         setFormData({ name: '', text: '', value: '' }); // Reset form
+    };
+
+    const handleEdit = (review) => {
+        setFormData({
+            name: review.name,
+            text: review.text,
+            value: review.value
+        });
+        setEditingKey(review.key);
     };
 
     return (
@@ -90,7 +107,7 @@ function ReviewsPage() {
                     max="5"
                     required
                 />
-                <button type="submit">Enviar Reseña</button>
+                <button type="submit">{editingKey ? 'Actualizar Reseña' : 'Enviar Reseña'}</button>
             </form>
             <div className="reviews-container">
                 {reviews.map((review) => (
@@ -98,24 +115,22 @@ function ReviewsPage() {
                         <h3>{review.name}</h3>
                         <p>{review.text}</p>
                         <p>value: {review.value} / 5</p>
-                        <button className="delete-button" onClick={() => {
-                            // Logic to delete the review
-                            console.log('Delete review with key:', review.key);
-                            // Call the delete function from reviewsService
-                            reviewsService.deleteReview(review.key)
-                                .then(() => {
-                                    console.log('Review deleted successfully');
-                                    findAllReviews(); // Refresh the reviews list
-                                })
-                                .catch((error) => {
-                                    console.error('Error deleting review:', error);
-                                });
-
-                        }}>Eliminar</button>
+                        <div className="review-buttons">
+                            <button className="edit-button" onClick={() => handleEdit(review)}>Editar</button>
+                            <button className="delete-button" onClick={() => {
+                                reviewsService.deleteReview(review.key)
+                                    .then(() => {
+                                        console.log('Review deleted successfully');
+                                        findAllReviews(); // Refresh the reviews list
+                                    })
+                                    .catch((error) => {
+                                        console.error('Error deleting review:', error);
+                                    });
+                            }}>Eliminar</button>
+                        </div>
                     </div>
                 ))}
             </div>
-
             <Footer />
         </div>
     );

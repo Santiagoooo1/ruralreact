@@ -1,3 +1,9 @@
+import buceo1 from "../assets/images/buceo1.jpg";
+import buceo2 from "../assets/images/buceo2.jpg";
+import masca1 from "../assets/images/masca1.jpg";
+import masca2 from "../assets/images/masca2.jpg";
+import teide from "../assets/images/teide.jpg";
+import teide2 from "../assets/images/teide2.jpg";
 export const ACTIVITIES = [
     {
         name: "Buceo, La Catedral",
@@ -12,8 +18,8 @@ export const ACTIVITIES = [
             "Alquiler de equipo",
         ],
         images: [
-            "https://example.com/senderismo1.jpg",
-            "https://example.com/senderismo2.jpg"
+            buceo1,
+            buceo2
         ],
         details: "La Catedral es un majestuoso punto de buceo situado en la costa del norte de Tenerife, delante del Puerto de la Cruz. Es puro paisaje volcánico, con arcos basálticos, al que se accede mediante un descenso de unos 30 metros para luego iniciar el ascenso dentro de este túnel vertical."
     },
@@ -30,8 +36,8 @@ export const ACTIVITIES = [
             "Áreas de picnic",
         ],
         images: [
-            "https://example.com/tamadaba1.jpg",
-            "https://example.com/tamadaba2.jpg"
+            masca1,
+            masca2
         ],
         details: "El Camino del Barranco de Masca es una de las rutas más populares en Tenerife. Este barranco se encuentra en el Macizo de Teno, una de las primeras formaciones rocosas que emergieron del Océano Atlántico dando origen a la isla de Tenerife. A través del barranco descubrirás una parte de esta joya geológica hasta llegar a la Playa de Masca. Si el embarcadero se encuentra abierto, allí podrás terminar tu ruta tomando un barco para ir a los Acantilados de Los Gigantes. En caso de que esté cerrado, obligatoriamente deberás realizar andando el trayecto de regreso, lo que complica la dificultad."
     },
@@ -48,8 +54,8 @@ export const ACTIVITIES = [
             "Acceso para personas con movilidad reducida"
         ],
         images: [
-            "https://example.com/cueva1.jpg",
-            "https://example.com/cueva2.jpg"
+            teide,
+            teide2
         ],
         details: "Explora las estrellas y las galaxias con la comodidad de un tour en grupo reducido. Sobrevuela las nubes, disfruta de la puesta de sol y observa cómo cobra vida sobre el Teide uno de los cielos nocturnos más claros del mundo."
     }

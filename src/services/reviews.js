@@ -1,5 +1,5 @@
 import { db } from './firebase';
-import { ref, get, set, push } from 'firebase/database';
+import { ref, get, set, push, update } from 'firebase/database';
 
 const getAllReviews = () => {
     console.log(db);
@@ -12,9 +12,7 @@ const getAllReviews = () => {
 const saveReview = (review) => {
     console.log('Saving review to Firebase:', review);
     const dbRef = ref(db, '/reviews');
-    // return set(dbRef, review);
     return push(dbRef, review);
-
 };
 
 const deleteReview = (key) => {
@@ -23,9 +21,15 @@ const deleteReview = (key) => {
     return set(dbRef, null);
 };
 
+const updateReview = (key, updatedData) => {
+    console.log('Updating review with key:', key, 'Data:', updatedData);
+    const dbRef = ref(db, `/reviews/${key}`);
+    return update(dbRef, updatedData);
+};
 
 export default {
     getAllReviews,
     saveReview,
-    deleteReview
+    deleteReview,
+    updateReview
 };

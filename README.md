@@ -1,11 +1,6 @@
 <a name="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See https://www.markdownguide.org/basic-syntax/#reference-style-links.
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -16,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/your_username/repo_name">
+  <a href="https://github.com/Santiagoooo1/ruralreact.git">
     <img src="src/assets/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -25,14 +20,14 @@
   <p align="center">
     A beautiful rural house website showcasing the best of nature and comfort.
     <br />
-    <a href="https://github.com/your_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Santiagoooo1/ruralreact.git"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/your_username/repo_name">View Demo</a>
+    <a href="https://rural-884ed.web.app/">View Demo</a>
     ·
-    <a href="https://github.com/your_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/Santiagoooo1/ruralreact/issues">Report Bug</a>
     ·
-    <a href="https://github.com/your_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/Santiagoooo1/ruralreact/issues">Request Feature</a>
   </p>
 </div>
 
@@ -80,12 +75,6 @@ Casa Rural El Chorro is a beautiful rural house website showcasing the best of n
 
 The website is fully responsive, designed using Flexbox and media queries to ensure it looks great on all devices.
 
-### Figma Design Reference
-
-The design of this website is based on a Figma design. You can view the design [here](https://www.figma.com/file/your_figma_design_link).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -102,7 +91,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username/repo_name.git
+   git clone https://github.com/Santiagoooo1/ruralreact.git
    ```
 2. Install NPM packages
    ```sh
@@ -133,7 +122,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Add More Languages
 - [ ] Add Booking Functionality
 
-See the [open issues](https://github.com/your_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Santiagoooo1/ruralreact/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,9 +152,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Santiago - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Santiagoooo1/ruralreact.git](https://github.com/Santiagoooo1/ruralreact.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,17 +170,16 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/your_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/your_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/your_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/your_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/your_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/your_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/your_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/your_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/your_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Santiagoooo1/ruralreact.svg?style=for-the-badge
+[contributors-url]: https://github.com/Santiagoooo1/ruralreact/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Santiagoooo1/ruralreact.svg?style=for-the-badge
+[forks-url]: https://github.com/Santiagoooo1/ruralreact/network/members
+[stars-shield]: https://img.shields.io/github/stars/Santiagoooo1/ruralreact.svg?style=for-the-badge
+[stars-url]: https://github.com/Santiagoooo1/ruralreact/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Santiagoooo1/ruralreact.svg?style=for-the-badge
+[issues-url]: https://github.com/Santiagoooo1/ruralreact/issues
+[license-shield]: https://img.shields.io/github/license/Santiagoooo1/ruralreact.svg?style=for-the-badge
+[license-url]: https://github.com/Santiagoooo1/ruralreact/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/your_username
 [product-screenshot]: images/screenshot.png

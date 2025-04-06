@@ -152,7 +152,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Santiago - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Santiago - [@your_twitter](https://twitter.com/saantiagodominguez93@gmail.com) - email@example.com
 
 Project Link: [https://github.com/Santiagoooo1/ruralreact.git](https://github.com/Santiagoooo1/ruralreact.git)
 
@@ -191,5 +191,5 @@ https://rural-884ed.web.app/
 
 ### Latest Screenshot
 
-![Latest Screenshot](src/assets/images/latest_screenshot.png)
+![Latest Screenshot](src/assets/images/captura.png)
 
